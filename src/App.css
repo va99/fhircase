@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Global Styles */
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif; /* Applying sans-serif font */
+}
+
+/* Dark Mode Transition */
+html.dark {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Custom Dark Mode Colors */
+html.dark .bg-gray-100 {
+  background-color: #1a202c; /* Dark gray background */
+}
+
+html.dark .bg-white {
+  background-color: #2d3748; /* Darker background for content areas */
+}
+
+html.dark .text-gray-800 {
+  color: #edf2f7; /* Light gray text for readability */
+}
+
+html.dark .text-black {
+  color: #f7fafc; /* Light text color */
+}
+
+html.dark .border-gray-300 {
+  border-color: #4a5568; /* Darker border color */
+}
+
+html.dark .focus:ring-blue-500 {
+  --tw-ring-color: #63b3ed; /* Custom focus ring color */
+}
+
+html.dark .bg-blue-500 {
+  background-color: #2b6cb0; /* Darker blue for buttons */
+}
+
+html.dark .hover\:bg-blue-600:hover {
+  background-color: #2b6cb0; /* Darker blue on hover */
+}
+
+html.dark .bg-green-500 {
+  background-color: #38a169; /* Darker green for buttons */
+}
+
+html.dark .hover\:bg-green-600:hover {
+  background-color: #2f855a; /* Darker green on hover */
+}
+
+/* Custom Shadows */
+.shadow-lg {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .container {
+    padding: 0 1rem; /* Reduce container padding on small screens */
+  }
+}
+
+/* Logo Styles */
+/* Add this to your App.css */
+
+/* Logo Styles */
+.logo {
+  display: inline-flex; /* Use inline-flex to center the text */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  width: 50px; /* Set the desired width */
+  height: 50px; /* Set the desired height */
+  border-radius: 50%; /* Make it a circle */
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text color */
+  border: 2px solid #ffffff; /* White border */
+  font-weight: bold; /* Bold text */
+  font-size: 24px; /* Adjust text size as needed */
+  overflow: hidden; /* Hide overflow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+}
+
+/* General Styles */
+.bg-gray-100 {
+  background-color: #f7f7f7; /* Light gray background */
+}
+
+.text-black {
+  color: #000000; /* Black text color */
+}
+
+.border-gray-300 {
+  border-color: #e2e8f0; /* Light gray border */
+}
+
+/* Remove blue-related styles */
+.bg-blue-500 {
+  background-color: #000000; /* Black background for buttons */
+}
+
+.hover\:bg-blue-600:hover {
+  background-color: #000000; /* Black on hover */
+}
+
+/* Green button styles */
+.bg-green-500 {
+  background-color: #38a169; /* Green background for buttons */
+}
+
+.hover\:bg-green-600:hover {
+  background-color: #2f855a; /* Darker green on hover */
+}
+
+/* Remove dark mode and toggle button styles */
